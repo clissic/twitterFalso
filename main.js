@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           <div class="content">
             <div class="names">
               <p class="full-name">${result[i].name}</p>
-              <p class="user-name">@${result[i].name.replace(" ", "_")}</p>
+              <p class="user-name">@${result[i].name.replace(" ", "_").toLowerCase()}</p>
               <p class="time"> ${new Date().toLocaleDateString()}</p>
             </div>
           </div>
